@@ -288,7 +288,7 @@ class Mic:
 
         return self.transcribe(AUDIO_FILE)
         
-    def say(self, phrase, OPTIONS=" -vdefault+m3 -p 40 -s 160 --stdout > say.wav"):
+    def say(self, phrase, OPTIONS=" -vdefault+m3 -p 40 -s 120 --stdout > say.wav"):
         # alter phrase before speaking
         phrase = alteration.clean(phrase)
 
