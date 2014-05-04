@@ -10,8 +10,8 @@ import vocabcompiler
 
 def say(phrase, OPTIONS = " -vdefault+m3 -p 40 -s 120 --stdout > say.wav"):
 
-    os.system("espeak " + json.dumps(phrase) + OPTIONS)
-    os.system("aplay -D hw:1,0 say.wav")
+    os.system("tts " + json.dumps(phrase))
+    #os.system("aplay -D hw:1,0 say.wav")
 
 
 

@@ -292,5 +292,6 @@ class Mic:
         # alter phrase before speaking
         phrase = alteration.clean(phrase)
 
-        os.system("espeak " + json.dumps(phrase) + OPTIONS)
-        os.system("aplay -D hw:1,0 say.wav")
+        os.system("tts " + json.dumps(phrase))
+        #os.system("aplay -D hw:1,0 say.wav")
+
