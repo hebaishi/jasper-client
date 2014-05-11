@@ -35,10 +35,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Features of this fork:
+## Features of this fork:
 * Uses google speech instead of espeak. The voice sounds much nicer (although it breaks up when reading long sentences because of Google's 100-character limit) and you need an internet connection for it to work
 * Weather module has been modified. Did not work for me so I switched to a simpler BBC Weather RSS feed. Simply replace the URL with your location of choice (BBC Weather, 3-day forecast). Keyword: WEATHER
 * Added BBC World News (Keyword: BBC WORLD) and BBC UK News (Keyword: BBC UNITED KINGDOM). Jasper reads out the first four headlines from each feed.
-To do:
+## To do:
 * Change the location-awareness in populate.py to make it more robust, as it didn't work for me.
 * Add a 'hyperion' module for controlling LEDs using jasper
