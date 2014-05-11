@@ -36,9 +36,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Features of this fork:
-* Uses google speech instead of espeak. The voice sounds much nicer (although it breaks up when reading long sentences because of Google's 100-character limit) and you need an internet connection for it to work
-* Weather module has been modified. Did not work for me so I switched to a simpler BBC Weather RSS feed. Simply replace the URL with your location of choice (BBC Weather, 3-day forecast). Keyword: WEATHER
-* Added BBC World News (Keyword: BBC WORLD) and BBC UK News (Keyword: BBC UNITED KINGDOM). Jasper reads out the first four headlines from each feed.
+* Uses google speech instead of espeak. The voice sounds much nicer (although it breaks up when reading long sentences because of Google's 100-character limit) and you need an internet connection for it to work. You need to install the 'tts' script - you can copy it to your bin by running the following command inside the jasper directory:
+
+```
+sudo cp tts /usr/bin
+```
+
+* Weather module has been modified. Did not work for me so I switched to a simpler BBC Weather RSS feed. Simply replace the URL with your location of choice (BBC Weather, 3-day forecast). **Keyword: WEATHER**
+* Added BBC World News **(Keyword: BBC WORLD)** and BBC UK News **(Keyword: BBC UNITED KINGDOM)**. Jasper reads out the first four headlines from each feed.
 
 ## To do:
 * Change the location-awareness in populate.py to make the weather module more robust, as it didn't work for me.
